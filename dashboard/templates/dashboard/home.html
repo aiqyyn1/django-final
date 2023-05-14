@@ -1,0 +1,108 @@
+{% extends 'dashboard/base.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="/static/css/main.css?1620957971" />
+<div class="main">
+
+    <div>Welcome to our website!</div>
+    <img class="main_img" src={% static 'images/comfortstudy.jpg' %}>
+
+</div>
+<div class="main_text">
+    <div>We're thrilled that you've found us and we hope you'll find everything you're looking for here. Our
+        <br> website is designed to be your go-to source for information on insert your website 's or
+        <br> niche here. Whether you 're an expert in the field or just getting started, we have something for everyone. </div>
+</div>
+<section id="container">
+
+    <div class="row">
+        <div class="col-md-3">
+            <a href="{% url 'notes' %}">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'images/notes.png' %}" alt="Notes image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Notes</h5>
+                        Create Notes to refer them later. They are stored permanently until deleted
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="{% url 'homework' %}">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'images/homework.jpeg' %}" alt="Notes image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Homework</h5>
+                        Add homeworks and assign them deadlines. They will be displayed prioritised by deadlines
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="{% url 'youtube' %}">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'images/youtube1.jpg' %}" alt="Notes image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Youtube</h5>
+                        Search Youtube and select your desired video to play it on youtube
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="{% url 'todo' %}">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'images/todo1.jpg' %}" alt="Notes image" />
+                    <div class="card-body">
+                        <h5 class="card-title">To Do</h5>
+                        Add your to-do lists for your day and remove them as you finish
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <br /><br /><br />
+
+    <div class="row ">
+        <div class="col-md-3 offset-md-3">
+            <a href="{% url 'books' %}">
+                <div class="card mt-20">
+                    <img class="card-img-top" src="{% static 'images/books1.png' %}" alt="Notes image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Books</h5>
+                        Browse books from a list of neatly organised book menu
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 ">
+            <a href="">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'images/music.jpg' %}" alt="Notes image" />
+                    <div class="card-body">
+                        <h5 class="card-title">News</h5>
+                        Read and chill
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</section>
+<footer class="footer">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Copyright &copy; 2023
+                    <a href="#">Your Company Name</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#">Privacy Policy</a>
+                <span class="mx-2">|</span>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock content %}
